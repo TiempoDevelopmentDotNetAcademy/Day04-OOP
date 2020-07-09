@@ -1,0 +1,66 @@
+{
+   // Use IntelliSense to find out which attributes exist for C# debugging
+   // Use hover for the description of the existing attributes
+   // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+   "version": "0.2.0",
+   "configurations": [
+        {
+            "name": ".NET Core Launch (console) Abstract",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildAbstract",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/OOP-Abstract/bin/Debug/netcoreapp3.1/OOP-Abstract.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/OOP-Abstract",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (console) DependencyInversion",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildDependencyInversion",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/OOP-DependencyInversion/bin/Debug/netcoreapp3.1/OOP-DependencyInversion.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/OOP-DependencyInversion",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (console) Interface",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildInterface",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/OOP-Interface/bin/Debug/netcoreapp3.1/OOP-Interface.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/OOP-Interface",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (console) Modifiers",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildModifiers",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/OOP-Modifiers/bin/Debug/netcoreapp3.1/OOP-Modifiers.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/OOP-Modifiers",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
